@@ -23,7 +23,7 @@ public class DLList<E> implements ListInterface<E> {
 	}
 	public void add(int index, E x)  //adds x to list at position index
 	{
-		if (index > length || index < 0 )  // index out of range
+		if (index > length/2 || index < 0 )  // index out of range
 		{
 			System.out.printf("Out of range in add(int index, E x)\n");
 			System.exit(0);
@@ -77,7 +77,7 @@ public class DLList<E> implements ListInterface<E> {
 	@SuppressWarnings("unchecked")
 	public E get (int index) // returns data at position index
 	{
-		if (index >= length || index < 0) // if index is out of bounds
+		if (index >= length/2 || index < 0) // if index is out of bounds
 		{
 			System.out.printf("Error in get (int index)\n");
 			System.exit(0); 
@@ -118,7 +118,7 @@ public class DLList<E> implements ListInterface<E> {
 	
 	public E remove(int index) // removes and returns data at position index
 	{
-		if (index >= length || index < 0) // index out of bounds
+		if (index >= length/2 || index < 0) // index out of bounds
 		{
 			System.out.printf("Error in remove (int index)\n");
 			System.exit(0); 
@@ -145,7 +145,7 @@ public class DLList<E> implements ListInterface<E> {
 
 	public E set (int index, E x) // sets data at position index to x
 	{
-		if (index >= length || index < 0) // index out of bounds
+		if (index >= length/2 || index < 0) // index out of bounds
 		{
 			System.out.printf("Error in get (int index)\n");
 			System.exit(0); 
